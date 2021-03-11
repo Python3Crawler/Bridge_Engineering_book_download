@@ -16,7 +16,7 @@ def write_file(picPath, src, name):
             f.write(response.content)
         print('{}{}.jpg is saved'.format(picPath, name))
     except requests.exceptions.ConnectionError:
-        print('Sorry,image cannot downloaded, url is error{}.'.format(src))
+        print('Sorry,image cannot download, url is error{}.'.format(src))
 
 
 def get_src(picPath, url, page_start, page_end):
